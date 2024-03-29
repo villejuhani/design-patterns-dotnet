@@ -1,5 +1,5 @@
-﻿using DesignPatterns.StrategyPattern.Behaviors;
-using DesignPatterns.StrategyPattern.Models.Ducks;
+﻿using DesignPatterns.Strategy.Behaviors;
+using DesignPatterns.Strategy.Models.Ducks;
 
 FlyNoWay flyNoWay = new();
 MuteQuack muteQuack = new();

@@ -1,6 +1,6 @@
-﻿using DesignPatterns.StrategyPattern.Behaviors;
+﻿using DesignPatterns.Strategy.Behaviors;
 
-namespace DesignPatterns.StrategyPattern.Models.Ducks;
+namespace DesignPatterns.Strategy.Models.Ducks;
 
 public class MallardDuck : Duck
 {

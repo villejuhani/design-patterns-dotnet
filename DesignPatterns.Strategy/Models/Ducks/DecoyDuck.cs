@@ -1,7 +1,7 @@
-﻿using DesignPatterns.StrategyPattern.Behaviors;
-using DesignPatterns.StrategyPattern.Behaviors.Interfaces;
+﻿using DesignPatterns.Strategy.Behaviors;
+using DesignPatterns.Strategy.Behaviors.Interfaces;
 
-namespace DesignPatterns.StrategyPattern.Models.Ducks;
+namespace DesignPatterns.Strategy.Models.Ducks;
 
 public class DecoyDuck : Duck
 {
