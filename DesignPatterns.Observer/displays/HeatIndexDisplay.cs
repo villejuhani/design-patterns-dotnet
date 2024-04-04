@@ -11,10 +11,10 @@ public class HeatIndexDisplay : IObserver, IDisplayElement
         _weatherData.RegisterObserver(this);
     }
     
-    public void Update(float temp, float humidity, float pressure)
+    public void Update()
     {
-        var fahrenheit = WeatherCalculations.ConvertCelsiusToFahrenheit(temp);
-        _heatIndex = WeatherCalculations.CalculateHeatIndex(fahrenheit, humidity);
+        var fahrenheit = WeatherCalculations.ConvertCelsiusToFahrenheit(_weatherData.Temperature);
+        _heatIndex = WeatherCalculations.CalculateHeatIndex(fahrenheit, _weatherData.Humidity);
         
         Display();
     }

@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Observer;
 
-public class WeatherCalculations
+public static class WeatherCalculations
 {
     public static float ConvertCelsiusToFahrenheit(float celsius)
     {

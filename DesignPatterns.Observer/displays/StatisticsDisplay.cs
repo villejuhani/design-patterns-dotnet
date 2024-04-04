@@ -13,8 +13,9 @@ public class StatisticsDisplay : IObserver, IDisplayElement
         _weatherData = weatherData;
         _weatherData.RegisterObserver(this);
     }
-    public void Update(float temp, float humidity, float pressure)
+    public void Update()
     {
+        var temp = _weatherData.Temperature;
         _temperatureSum += temp;
         _temperatureReadings++;
 
