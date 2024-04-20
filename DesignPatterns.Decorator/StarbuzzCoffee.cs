@@ -13,14 +13,14 @@ class StarbuzzCoffee
         beverage2 = new Mocha(beverage2);
         beverage2 = new Mocha(beverage2);
         beverage2 = new Whip(beverage2);
-        Console.WriteLine($"{beverage2.Description} $ {beverage2.Cost()}");
+        Console.WriteLine($"{beverage2.Description} $ {beverage2.Cost():0.00}");
 
         Beverage beverage3 = new HouseBlend();
         beverage3.BeverageSize = Beverage.Size.Venti;
         beverage3 = new Soy(beverage3);
         beverage3 = new Mocha(beverage3);
         beverage3 = new Whip(beverage3);
-        Console.WriteLine($"{beverage3.Description} $ {beverage3.Cost()}");
+        Console.WriteLine($"{beverage3.Description} $ {beverage3.Cost():0.00}");
 
     }
 }
